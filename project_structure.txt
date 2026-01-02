@@ -1,0 +1,34 @@
+📁 FAMILY BUDGET MANAGER - PROJECT STRUCTURE
+============================================
+
+family_budget_app/
+│
+├── app.py                          # Main Streamlit application
+├── requirements.txt                # Dependencies
+├── README.md                       # Documentation
+│
+├── config/
+│   ├── __init__.py
+│   ├── database.py                 # Database connection & setup
+│   └── categories.py               # Budget categories structure
+│
+├── models/
+│   ├── __init__.py
+│   ├── user.py                     # User authentication & management
+│   ├── expense.py                  # Expense operations
+│   └── budget.py                   # Budget planning
+│
+├── utils/
+│   ├── __init__.py
+│   ├── auth.py                     # Password hashing, session management
+│   ├── data_export.py              # CSV/Excel/PDF export
+│   ├── visualizations.py           # Charts and graphs
+│   └── ai_predictions.py           # ML predictions & insights
+│
+└── data/
+    └── family_budget.db            # SQLite database (local dev)
+
+DEPLOYMENT STRATEGY:
+- Streamlit Cloud for hosting
+- Supabase PostgreSQL for production database
+- GitHub for version control
